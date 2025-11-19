@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ciberseguridade - Traballo de Investigación</title>
+<style>
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+max-width: 900px;
+margin: 0 auto;
+padding: 20px;
+background-color: #f9f9f9;
+line-height: 1.6;
+}
+
+header {
+text-align: center;
+background-color: #4a6fa5;
+color: white;
+padding: 15px;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+h1 {
+margin: 0;
+font-size: 28px;
+}
+
+h2 {
+color: #2c3e50;
+border-left: 5px solid #4a6fa5;
+padding-left: 10px;
+margin-top: 30px;
+}
+
+h3 {
+color: #34495e;
+}
+
+nav {
+background-color: #e0e0e0;
+padding: 10px;
+border-radius: 5px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+nav a {
+margin: 0 15px;
+text-decoration: none;
+color: #2c3e50;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #4a6fa5;
+text-decoration: underline;
+}
+
+section {
+background-color: white;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+margin-bottom: 20px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 15px 0;
+}
+
+table, th, td {
+border: 1px solid #ddd;
+}
+
+th {
+background-color: #4a6fa5;
+color: white;
+padding: 10px;
+}
+
+td {
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+ul, ol {
+padding-left: 25px;
+}
+
+li {
+margin-bottom: 8px;
+}
+
+footer {
+text-align: center;
+margin-top: 30px;
+padding: 15px;
+background-color: #e0e0e0;
+border-radius: 5px;
+font-size: 14px;
+}
+
+.nota {
+background-color: #fffacd;
+padding: 10px;
+border-left: 4px solid #ffd700;
+margin: 15px 0;
+font-style: italic;
+}
+
+.importante {
+font-weight: bold;
+color: #c0392b;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Ciberseguridade: Ataques e Mecanismos de Defensa</h1>
+<p>Traballo de Investigación - Bacharelato</p>
+</header>
+
+<nav>
+<a href="#introduccion">Introdución</a> |
+<a href="#ataques">Tipos de Ataques</a> |
+<a href="#defensa">Mecanismos de Defensa</a>
+</nav>
+
+<section id="introduccion">
+<h2>Introdución</h2>
+<p>Neste traballo vou falar sobre a ciberseguridade, que é un tema moi importante hoxe en día. Todos usamos Internet constantemente, pero moitas veces non somos conscientes dos perigos que hai.</p>
+
+<p>A ciberseguridade é como a seguridade da nosa casa, pero no mundo dixitál. Serve para protexer os nosos dispositivos, datos e información persoal de xente que quere facer mal.</p>
+
+<div class="nota">
+<p>Fixen este traballo porque me parece un tema moi interesante e importante para todos os que usamos Internet.</p>
+</div>
+
+<h3>Por que é importante?</h3>
+<ul>
+<li>Protexe a nosa información persoal</li>
+<li>Evita que nos rouben as contrasinais</li>
+<li>Protexe os nosos cartos se facemos operacións bancarias en liña</li>
+<li>Mantén a seguridade dos nosos dispositivos</li>
+</ul>
+</section>
+
+<section id="ataques">
+<h2>Principais Tipos de Ataques</h2>
+<p>Hai moitos tipos de ataques cibernéticos. Aquí vou falar dos máis comúns que poden afectarnos a nós como usuarios normais.</p>
+
+<h3>1. Malware</h3>
+<p>O malware é software malicioso que se instala no noso ordenador ou móbil sen que nos demos conta. Pode ser:</p>
+<ul>
+<li><span class="importante">Virus:</span> Programas que se copian a si mesmos e poden danar o sistema</li>
+<li><span class="importante">Ransomware:</span> Bloquea o noso dispositivo e pide cartos para liberalo</li>
+<li><span class="importante">Spyware:</span> Espía o que facemos no noso dispositivo</li>
+</ul>
+
+<h3>2. Phishing</h3>
+<p>É cando nos envían un correo electrónico ou mensaxe que parece legal (por exemplo, do noso banco), pero en realidade é falso e queren que demos os nosos datos.</p>
+
+<h3>3. Ataques de Denegación de Servizo (DDoS)</h3>
+<p>Estes ataques fan que unha páxina web ou servizo en liña non funcione porque recibe demasiadas peticións ao mesmo tempo.</p>
+
+<table>
+<caption>Resumo dos tipos de ataques</caption>
+<tr>
+<th>Tipo de Ataque</th>
+<th>Como funciona</th>
+<th>Que pretende conseguir</th>
+</tr>
+<tr>
+<td>Malware</td>
+<td>Instálase no dispositivo sen permiso</td>
+<td>Danar o sistema ou roubar información</td>
+</tr>
+<tr>
+<td>Phishing</td>
+<td>Engana ao usuario con mensaxes falsas</td>
+<td>Conseguir datos persoais e contrasinais</td>
+</tr>
+<tr>
+<td>DDoS</td>
+<td>Satura un servidor con moitas peticións</td>
+<td>Que o servizo non estea dispoñible</td>
+</tr>
+<tr>
+<td>Inxección SQL</td>
+<td>Aproveita erros en páxinas web</td>
+<td>Roubar información das bases de datos</td>
+</tr>
+</table>
+
+<div class="nota">
+<p>O meu primo case cae nun ataque de phishing o ano pasado. Recibiu un correo que parecía de Netflix dicindo que a súa conta ía ser suspendida e pedíalle os datos da tarxeta. Por sorte preguntoume a min antes de facelo.</p>
+</div>
+</section>
+
+<section id="defensa">
+<h2>Mecanismos de Defensa e Protección</h2>
+<p>Para protexernos destes ataques, hai varias cousas que podemos facer. Algunhas son técnicas, pero outras son simplemente ter sentido común.</p>
+
+<h3>Que podemos facer como usuarios?</h3>
+<ol>
+<li>Usar <span class="importante">antivirus</span> e mantelo actualizado</li>
+<li>Descargar software só de fontes oficiais</li>
+<li>Non facer clic en enlaces sospeitosos en correos electrónicos</li>
+<li>Usar <span class="importante">contrasinais fortes</span> e diferentes para cada conta</li>
+<li>Activar a autenticación en dous factores sempre que sexa posible</li>
+<li>Facer copias de seguridade dos nosos datos importantes</li>
+</ol>
+
+<h3>Ferramentas técnicas de protección</h3>
+<ul>
+<li><span class="importante">Firewalls:</span> Como un garda de seguridade que controla o que entra e sae da nosa rede</li>
+<li><span class="importante">Cifrado:</span> Converter a información en código para que ninguén a poida ler sen permiso</li>
+<li><span class="importante">Sistemas de detección de intrusos:</span> Avisan cando alguén está intentando entrar nos nosos sistemas</li>
+</ul>
+
+<p>O máis importante é estar informado e ser consciente de que existen estes perigos. Moitas veces, o punto débil da seguridade somos nós mesmos, por descuido ou por descoñecemento.</p>
+
+<div class="nota">
+<p>Para este traballo investiguei en páxinas web oficiais como a OSI (Oficina de Seguridade do Internauta) e INCIBE, que teñen información moi útil e en galego.</p>
+</div>
+</section>
+
+<section>
+<h2>Conclusións</h2>
+<p>Despois de facer esta investigación, cheguei á conclusión de que a ciberseguridade é algo que nos afecta a todos, non só ás empresas ou aos expertos en informática.</p>
+
+<p>É importante que todos coñezamos os riscos e saibamos como protexernos, porque cada vez facemos máis cousas en Internet: comprar, falar cos amigos, ver películas, estudiar...</p>
+
+<p>Tamén comprendín que non hai unha solución única para estar protexidos, senón que temos que combinar varias medidas: tecnoloxía, coñecemento e sentido común.</p>
+</section>
+
+<footer>
+<p>Traballo realizado por [O teu nome] - Data: [Data de entrega]</p>
+<p>Fontes consultadas: OSI, INCIBE, Wikipedia</p>
+</footer>
+</body>
+</html>
