@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberseguridade - Traballo de Investigación</title>
+    <style>
+        /* REQUISITO: Selector de elementos para cambiar colores */
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        p {
+            color: #444;
+            margin-bottom: 15px;
+        }
+        
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        
+        nav {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+        
+        section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+        }
+        
+        table, th, td {
+            border: 2px solid #bdc3c7;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 10px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+        
+        ul, ol {
+            padding-left: 30px;
+            margin: 15px 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        
+        .imagen {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin: 10px;
+        }
+        
+        .importante {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        
+        .consejo {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .recursos {
+            background-color: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ciberseguridade: Ataques e Mecanismos de Defensa</h1>
+        <p>Unha análise completa dos riscos dixitais e como protexernos</p>
+    </header>
+    
+    <!-- REQUISITO: Tres vínculos internos -->
+    <nav>
+        <a href="#introduccion">Introdución</a>
+        <a href="#ataques">Tipos de Ataques</a>
+        <a href="#proteccion">Protección</a>
+    </nav>
+    
+    <section id="introduccion">
+        <!-- REQUISITO: Encabezados -->
+        <h2>Introdución á Ciberseguridade</h2>
+        
+        <!-- REQUISITO: Párrafos -->
+        <p>No mundo actual, onde a tecnoloxía forma parte de case todos os aspectos da nosa vida, a ciberseguridade converteuse nun tema de vital importancia. Desde as nosas comunicacións persoais ata as operacións bancarias, case todo o que facemos está de algunha maneira conectado a Internet.</p>
+        
+        <p>A ciberseguridade non é só unha preocupación para empresas grandes ou gobernos. Cada un de nós, como usuarios individuais, debemos ser conscientes dos riscos e saber como protexernos. Neste traballo, exploraremos os principais tipos de ataques cibernéticos e as estratexias máis efectivas para defendernos deles.</p>
+        
+        <div class="imagen">
+            <!-- REQUISITO: Imágenes -->
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&h=300&fit=crop" alt="Seguridade dixitál" style="max-width: 500px;">
+            <p><em>A ciberseguridade protexe os nosos datos e privacidade</em></p>
+        </div>
+        
+        <h3>Por que é tan importante a ciberseguridade?</h3>
+        
+        <!-- REQUISITO: Listas -->
+        <ul>
+            <li><span class="importante">Protección de datos persoais:</span> Evita o roubo de información sensible</li>
+            <li><span class="importante">Seguridade financeira:</span> Protexe as nosas contas bancarias e tarxetas</li>
+            <li><span class="importante">Privacidade:</span> Mantén a nosa información persoal confidencial</li>
+            <li><span class="importante">Integridade dos dispositivos:</span> Prevén danos no noso hardware e software</li>
+            <li><span class="importante">Continuidade do traballo:</span> Garante que podamos seguir usando os nosos dispositivos</li>
+        </ul>
+    </section>
+    
+    <section id="ataques">
+        <h2>Principais Tipos de Ataques Cibernéticos</h2>
+        
+        <p>Os ciberdelincuentes utilizan diversas técnicas para atacar aos usuarios. Estes son algúns dos métodos máis comúns que debemos coñecer:</p>
+        
+        <h3>1. Malware - Software Malicioso</h3>
+        <p>O malware é calquera programa deseñado para danar ou aproveitarse dun dispositivo, rede ou servizo. Inclúe virus, worms, troyanos, ransomware e spyware.</p>
+        
+        <div class="imagen">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop" alt="Malware e virus" style="max-width: 500px;">
+            <p><em>O malware pode infectar os nosos dispositivos de moitas formas</em></p>
+        </div>
+        
+        <h3>2. Phishing - Ataques de Enxeñería Social</h3>
+        <p>Os ataques de phishing intentan enganar ás vítimas para que revelen información sensible, como contrasinais ou datos bancarios, facéndose pasar por fontes confiables.</p>
+        
+        <h3>3. Ataques de Denegación de Servizo (DDoS)</h3>
+        <p>Estes ataques sobrecargan un servidor ou rede con tráfico falso, facendo que o servizo sexa inaccesible para os usuarios lexítimos.</p>
+        
+        <!-- REQUISITO: Tabla -->
+        <table>
+            <caption>Comparativa de Ataques Cibernéticos</caption>
+            <tr>
+                <th>Tipo de Ataque</th>
+                <th>Como Funciona</th>
+                <th>Obxectivo Principal</th>
+                <th>Nivel de Perigo</th>
+            </tr>
+            <tr>
+                <td>Malware</td>
+                <td>Instálase no dispositivo sen permiso</td>
+                <td>Danar o sistema ou roubar datos</td>
+                <td>Alto</td>
+            </tr>
+            <tr>
+                <td>Phishing</td>
+                <td>Engana ao usuario con mensaxes falsas</td>
+                <td>Conseguir datos persoais e credenciais</td>
+                <td>Medio-Alto</td>
+            </tr>
+            <tr>
+                <td>DDoS</td>
+                <td>Satura servidores con peticións falsas</td>
+                <td>Interromper servizos en liña</td>
+                <td>Medio</td>
+            </tr>
+            <tr>
+                <td>Ransomware</td>
+                <td>Cifra os datos e exixe rescate</td>
+                <td>Extorsionar cartos ás vítimas</td>
+                <td>Moi Alto</td>
+            </tr>
+            <tr>
+                <td>Spyware</td>
+                <td>Espía as actividades do usuario</td>
+                <td>Roubar información persoal</td>
+                <td>Medio</td>
+            </tr>
+        </table>
+        
+        <div class="consejo">
+            <p><strong>Consello de seguridade:</strong> Nunca fagas clic en enlaces sospeitosos en correos electrónicos ou mensaxes de texto, incluso se parecen de fontes confiables.</p>
+        </div>
+    </section>
+    
+    <section id="proteccion">
+        <h2>Mecanismos de Protección e Defensa</h2>
+        
+        <p>Protexerse dos ataques cibernéticos require unha combinación de ferramentas técnicas e boas prácticas de comportamento. Aquí tes as estratexias máis efectivas:</p>
+        
+        <h3>Ferramentas Técnicas Esenciais</h3>
+        
+        <!-- REQUISITO: Listas -->
+        <ol>
+            <li><span class="importante">Software Antivirus/Antimalware:</span> Programa especializado en detectar e eliminar amenazas antes de que causen dano.</li>
+            <li><span class="importante">Firewalls:</span> Actúan como gardas de seguridade que controlan o tráfico de rede entrante e saínte.</li>
+            <li><span class="importante">Sistemas de Detección de Intrusos (IDS):</span> Monitorizan a rede en busca de actividades sospeitosas.</li>
+            <li><span class="importante">Cifrado de Datos:</span> Converte a información en código ilexible para persoas non autorizadas.</li>
+            <li><span class="importante">Actualizacións Automáticas:</span> Mantén todo o software actualizado cos últimos parches de seguridade.</li>
+        </ol>
+        
+        <div class="imagen">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=300&fit=crop" alt="Protección dixitál" style="max-width: 500px;">
+            <p><em>As ferramentas de seguridade son esenciais para a protección</em></p>
+        </div>
+        
+        <h3>Boas Prácticas de Seguridade</h3>
+        <p>Ademais das ferramentas técnicas, estes hábitos son fundamentais para manterse seguro en liña:</p>
+        
+        <ul>
+            <li>Usa contrasinais longos e complexos para cada conta</li>
+            <li>Activa a autenticación en dous factores sempre que sexa posible</li>
+            <li>Descarga software só de fontes oficiais e verificadas</li>
+            <li>Fai copias de seguridade regulares dos teus datos importantes</li>
+            <li>Revisa os permisos das aplicacións que instalas</li>
+            <li>Mantente informado sobre as últimas ameazas e técnicas de ataque</li>
+        </ul>
+        
+        <h3>Educación e Concienciación</h3>
+        <p>O factor humano é frecuentemente o punto máis débil na seguridade. A educación continua sobre os riscos e as boas prácticas é fundamental para crear unha cultura de seguridade sólida.</p>
+        
+        <div class="recursos">
+            <h3>Recursos Adicionais de Aprendizaxe</h3>
+            <p>Para seguir aprendendo sobre ciberseguridade, recoméndanse estes recursos:</p>
+            <ul>
+                <li><a href="https://www.incibe.es" target="_blank">INCIBE - Instituto Nacional de Ciberseguridad</a></li>
+                <li><a href="https://www.osi.es" target="_blank">OSI - Oficina de Seguridad del Internauta</a></li>
+                <li><a href="https://www.cert.es" target="_blank">CCN-CERT - Centro Criptológico Nacional</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Conclusións Persoais</h2>
+        
+        <p>Despois de investigar a fondo sobre ciberseguridade, cheguei á conclusión de que é un tema que nos afecta a todos, independentemente da nosa idade ou coñecementos técnicos. A seguridade dixitál non é un luxo, senón unha necesidade no mundo actual.</p>
+        
+        <p>O que máis me sorprendeu foi descubrir como os ataques máis efectivos a miúdo aproveitan o factor humano en lugar de vulnerabilidades técnicas complexas. Isto reflicte a importancia de combinar tecnoloxía adecuada con educación e concienciación constante.</p>
+        
+        <p>En definitiva, a ciberseguridade é unha responsabilidade compartida que require un enfoque proactivo e continuo por parte de todos os usuarios de tecnoloxía.</p>
+    </section>
+    
+    <footer>
+        <p>Traballo realizado por <strong>Junshan Gao</strong> - 2º Bacharelato</p>
+        <p>Data de entrega: 24 de novembro de 2025</p>
+    </footer>
+</body>
+</html>
